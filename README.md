@@ -17,6 +17,7 @@ What is the upstream version? [] <enter some version higher than the previous>
 $ git clone https://github.com/mkoval/openrave-release.git
 $ cd openrave-release
 $ git checkout debian/trusty
+$ gbp dch --release --debian-branch=debian/trusty
 $ gbp buildpackage --git-debian-branch=debian/trusty --pristine-tar -uc -us
 ```
 
