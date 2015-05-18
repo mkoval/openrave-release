@@ -6,8 +6,8 @@ This repository packages an upstream OpenRAVE source tree into a buildable debia
 **Initialize cowbuilder:**
 ```
 $ sudo apt-get install cowbuilder
-$ sudo cowbuilder --create
-$ sudo cowbuilder --update
+$ sudo cowbuilder --create --distribution trusty
+$ [TO UPDATE] sudo cowbuilder --update
 ```
 
 **Import new upstream source:**
