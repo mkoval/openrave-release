@@ -5,10 +5,11 @@ This repository packages an upstream OpenRAVE source tree into a buildable debia
 ----
 **Import new upstream source:**
 ```bash
-$ curl -L https://github.com/personalrobotics/openrave/tarball/master.tar.gz
+$ curl -L https://api.github.com/repos/personalrobotics/openrave/tarball/master > master.tar.gz
 $ git clone https://github.com/mkoval/openrave-release.git
 $ cd openrave-release
-$ gbp import-orig --pristine-tar --upstream-branch=upstream --debian-branch=debian/trusty /path/to/master.tar.gz
+$ gbp import-orig --pristine-tar --upstream-branch=upstream --debian-branch=debian/trusty ../master.tar.gz
+What is the upstream version? [] <enter some version higher than the previous>
 ```
 
 **Build a debian source (`.dsc`) package:**
