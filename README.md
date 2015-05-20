@@ -16,7 +16,8 @@ What is the upstream version? [] <enter some version higher than the previous>
 ```bash
 $ git clone https://github.com/mkoval/openrave-release.git
 $ cd openrave-release
-$ gbp buildpackage --git-debian-branch=debian/trusty --pristine-tar -uc -us
+$ git checkout debian/trusty
+$ gbp buildpackage --git-debian-branch=debian/trusty -uc -us  --git-pbuilder
 ```
 
 **Build a debian binary (`.deb`) package:**
