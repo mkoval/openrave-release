@@ -1,6 +1,6 @@
 # OpenRAVE Gitbuildpackage (GBP) Repository #
 
-This repository packages an upstream OpenRAVE source tree into a buildable debian package.
+This repository packages an upstream OpenRAVE source tree into a buildable debian package. All of this documentatoin is written using `trusty` as an example. If you are building this package for a different version of Ubuntu, then you should replace `trusty` with the appropriate codename. You can get the codename of your current distribution by running `lsb_release -sc`.
 
 ----
 **Initialize cowbuilder:**
