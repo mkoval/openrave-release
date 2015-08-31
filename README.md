@@ -4,17 +4,17 @@ This repository packages an upstream OpenRAVE source tree into a buildable debia
 
 ----
 **Initialize cowbuilder:**
-```
+```shell
 $ sudo apt-get install cowbuilder
 $ DIST=trusty sudo cowbuilder --create --distribution ${DIST} --components "main universe"
 ```
 To update existing:
-```
+```shell
 $ sudo cowbuilder --update
 ```
 
 **Import new upstream source:**
-```bash
+```shell
 $ curl -L https://api.github.com/repos/personalrobotics/openrave/tarball/master > master.tar.gz
 $ git clone https://github.com/mkoval/openrave-release.git
 $ cd openrave-release
@@ -23,7 +23,7 @@ What is the upstream version? [] <enter version higher than the previous>
 ```
 
 **Build debian source (`.dsc`) and binary (`.deb`) packages:**
-```bash
+```shell
 $ git clone https://github.com/mkoval/openrave-release.git
 $ cd openrave-release
 $ git checkout debian/trusty
